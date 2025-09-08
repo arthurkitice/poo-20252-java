@@ -28,14 +28,18 @@ public class LibraryUser {
         return loans;
     }
 
+    //Composição ~> LoanItem é criado apenas dentro de LibraryUser
     public void addLoan(Book book, int days){
         if(this.loans.size() < 5) this.loans.add(new LoanItem(book, days));
         else System.out.println("Falha ao adicionar livro: " + book.getTitle() + ". (Usuário possui o limite máximo de empréstimos)");
     }
 
     public void removeLoan(Book book){
+        //Percorrer vetor item por item
         for(LoanItem item: this.loans){
+            //Verificar se o livro do item é igual ao livro passado
             if(item.getBook() == book){
+                //Se sim remover e enviar mensagem
                 this.loans.remove(item);
                 System.out.println("Empréstimo de livro removido.");
                 return;

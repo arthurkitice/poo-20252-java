@@ -16,6 +16,7 @@ public class LoanItem {
         return book;
     }
 
+    //Agregação ~> Book é criado fora de LoanItem e inserido em LoanItem
     public void setBook(Book book) {
         this.book = book;
     }
