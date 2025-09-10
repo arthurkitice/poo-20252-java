@@ -17,6 +17,14 @@ public class Assistente extends Funcionario{
         this.horaExtra = horaExtra;
     }
 
+    public double getHoraExtra() {
+        return horaExtra;
+    }
+
+    public void setHoraExtra(double horaExtra) {
+        this.horaExtra = horaExtra;
+    }
+
     @Override
     public double calculaSalario(){
         return (super.calculaSalario() + this.horaExtra * 50);
