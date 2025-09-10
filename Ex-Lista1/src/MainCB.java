@@ -7,13 +7,13 @@ public class MainCB {
 
         //Conta 1 - Entrada usando o construtor vazio
         ContaBancaria conta1 = new ContaBancaria();
-        conta1.titular = "Paula Tejano";
+        conta1.titular = "Walter White";
         conta1.numero = "123456789";
         conta1.saldo = 1000;
         conta1.ativa = true;
 
         //Conta 2 - Entrada usando o construtor com parâmetros
-        ContaBancaria conta2 = new ContaBancaria("Giuseppe Camolle", "987654321", 5000, true);
+        ContaBancaria conta2 = new ContaBancaria("Gustavo Fring", "987654321", 5000, true);
 
         //Exibindo ambas a conta antes e depois das alterações
         System.out.println("\n- Dados da conta 1 -");
