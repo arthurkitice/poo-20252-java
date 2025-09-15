@@ -1,5 +1,7 @@
 package exe0;
 
+import java.text.DecimalFormat;
+
 public class Diretor extends Funcionario{
     private double acoesEmpresa;
 
@@ -22,7 +24,7 @@ public class Diretor extends Funcionario{
 
     @Override
     public double calculaSalario(){
-        return super.calculaSalario() + this.acoesEmpresa * 2000;
+        return super.calculaSalario() + (this.acoesEmpresa * 5) / 12;
     }
 
     @Override
