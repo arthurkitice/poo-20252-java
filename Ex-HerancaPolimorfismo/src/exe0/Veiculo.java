@@ -49,5 +49,4 @@ public class Veiculo {
                 ", valorBase=" + valorBase +
                 '}';
     }
-
 }
