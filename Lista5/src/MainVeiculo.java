@@ -21,17 +21,10 @@ public class MainVeiculo {
 
         for(Veiculo veic : lista1) {
             veic.mover();
+            // cast é para conversão de tipos primitivos
+            // coerção é para conversão de objetos
+            Eletrico aux = (Eletrico) veic; // Poderia ser feito assim também -> ((Eletrico) veic).carregarBateria();
+            aux.carregarBateria();
         }
-
-        List<Eletrico> lista2 = new ArrayList<>();
-        lista2.add(car1);
-        lista2.add(car2);
-        lista2.add(pat1);
-        lista2.add(pat2);
-
-        for(Eletrico veic : lista2) {
-            veic.carregarBateria();
-        }
-
     }
 }
