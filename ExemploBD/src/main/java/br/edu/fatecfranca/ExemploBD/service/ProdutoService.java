@@ -24,7 +24,7 @@ public class ProdutoService {
 
     // Metodo que consulta um produto em particular
     public Optional<Produto> listaPorId(Long id){
-        // Se o findById() encontrar um produot, retorna ele
+        // Se o findById() encontrar um produto, retorna ele
         // Se o findById() não encontrar um produto, retorna null
         return produtoRepository.findById(id);
     }
