@@ -10,7 +10,24 @@ import java.util.Optional;
 
 @Service
 public class ProdutoService {
+    /*
+        2. SERVICE
+            --------------------------------------------------------------
+                    - Camada de LÓGICA DE NEGÓCIO.
+            - Aqui ficam regras, validações, cálculos, verificações, etc.
+            - O Controller chama o Service.
+            - O Service pode chamar um Repository para acessar o banco de dados.
 
+        Exemplo: validar campos, aplicar regras, impedir duplicações, processar dados.
+
+            --------------------------------------------------------------
+    */
+    /*
+        @Autowired
+            - Faz injeção de dependência automática.
+            - O Spring cria e injeta um objeto pronto, sem você precisar instanciá-lo com "new".
+                - Usado para injetar Services ou Repositories dentro de Controllers/Services.
+    */
     @Autowired
     private ProdutoRepository produtoRepository;
 
