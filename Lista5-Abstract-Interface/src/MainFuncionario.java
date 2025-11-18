@@ -1,6 +1,7 @@
 import ex1.Funcionario;
 import ex1.FuncionarioCLT;
 import ex1.FuncionarioPJ;
+import ex2.Pix;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +14,8 @@ public class MainFuncionario {
         FuncionarioPJ pj2 = new FuncionarioPJ("Fabio", 5000);
         FuncionarioCLT clt3 = new FuncionarioCLT("Pedro", 3000);
         FuncionarioPJ pj3 = new FuncionarioPJ("Maycon", 2500);
-
-        List<Funcionario> lista = new ArrayList<>();
+        Funcionario pj = new Funcionario();
+                List<Funcionario> lista = new ArrayList<>();
         lista.add(clt1);
         lista.add(pj1);
         lista.add(clt2);

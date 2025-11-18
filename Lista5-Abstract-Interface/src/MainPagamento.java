@@ -10,8 +10,8 @@ public class MainPagamento {
         CartaoCredito ct1 = new CartaoCredito();
         Pix px1 = new Pix();
         CartaoCredito ct2 = new CartaoCredito();
-        Pix px2 = new Pix();
-        CartaoCredito ct3 = new CartaoCredito();
+        Pix px2 = new= new
+                CartaoCredito ct3 = new CartaoCredito();
         Pix px3 = new Pix();
 
         List<Pagamento> lista = new ArrayList<>();
